@@ -5,17 +5,17 @@ def fibonacci(n):
     return fib[n]
 
 while True:
-    n = int(input("请输入要生成的 Fibonacci 数列的项数 (输入负数退出程序): "))
+    n = int(input("請輸入要生成的 Fibonacci 數列的項數 (輸入負數退出執行): "))
     
     if n < 0:
-        print("程序退出。")
+        print("退出執行。")
         break
     
     if n < 2:
-        print("请输入一个大于等于2的整数。")
+        print("請輸入一個大於等於2的整數。")
         continue
     
-    print("前", n, "项的 Fibonacci 数列:")
+    print("前", n, "項的 Fibonacci 數列:")
     for i in range(n):
         print(fibonacci(i), end=" ")
     print("\n")
