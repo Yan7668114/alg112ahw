@@ -19,8 +19,9 @@ def gradient_descent(f, initial_point, learning_rate=0.1, iterations=1000, toler
         p = p_new
     return p
 def target_function(p):
-    return p[0] ** 2 + p[1] ** 2
-initial_point = np.array([1.0, 1.0])
+    x, y, z = p[0], p[1], p[2]
+    return (x-1)*2 + (y-1)**2 + (z-1)**2
+initial_point = np.array([1.0, 1.0, 1.0])
 result = gradient_descent(target_function, initial_point)
 print("最優解:", result)
 print("目標函數在最優解處的值:", target_function(result))
