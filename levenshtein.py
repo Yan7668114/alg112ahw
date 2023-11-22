@@ -16,4 +16,4 @@ def min_edit_distance(str1, str2):
 str1 = "willson"
 str2 = "Yan"
 result = min_edit_distance(str1, str2)
-print(f"最小编辑距离 between '{str1}' 和 '{str2}': {result}")
+print(f"最小編輯距離 between '{str1}' 和 '{str2}': {result}")
